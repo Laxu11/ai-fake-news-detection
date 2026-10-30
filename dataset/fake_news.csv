@@ -1,0 +1,20 @@
+# Dataset file generated for demonstration purposes.
+# Replace this with a larger real-world dataset for better performance.
+header = "title,text,label"
+rows = [
+    "Breaking: City unveils new policy,Officials in the city announced a new policy for public transport improvements and safety. The plan includes more buses and new routes.,0",
+    "Miracle cure found for all diseases,Doctors say a mysterious herbal tea cures cancer, diabetes, and the flu instantly. Share this now before the government hides it.,1",
+    "Local elections conclude peacefully,Voting ended without major incidents and officials released preliminary results after a calm day at polling stations.,0",
+    "Alien spacecraft seen over city,Witnesses reported strange lights in the sky overnight and said a huge metallic object hovered above the downtown area.,1",
+    "New housing project approved,The city council approved a residential development plan after reviewing traffic and zoning requirements.,0",
+    "Scientists warn of hidden moon signal,Researchers claim a secret signal from the moon proves a new global emergency is imminent and must be shared immediately.,1",
+    "School district opens new science lab,Officials launched a new science laboratory to support research and student learning after securing funding from local donors.,0",
+    "Government secretly controls weather,Experts say the government is manipulating storms and redirecting rain across the country to disrupt crops and silence protestors.,1",
+    "Hospital expands emergency wing,Medical staff reported that the emergency department added more beds and specialists to improve patient care during peak hours.,0",
+    "Rare blood moon foretells global disaster,Ancient prophecies claim the blood moon will trigger a worldwide collapse and citizens should prepare for sudden chaos,1"
+]
+
+with open("dataset/fake_news.csv", "w", encoding="utf-8") as f:
+    f.write(header + "\n")
+    for row in rows:
+        f.write(row + "\n")
